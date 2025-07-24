@@ -103,10 +103,12 @@ header {
       margin: 0 0 10px;
     }
 
-    .headline .orange {
+    .headline  {
       color: rgba(233, 90, 8, 1);
     }
-
+    .orange {
+        color: rgba(233, 90, 8, 1);
+    }
     .description {
       font-size: 1.2rem;
       color: #555;
@@ -209,7 +211,7 @@ header {
 }
 
 /* plant lover section  */
-.container {
+.container2 {
   display: flex;
   padding: 20px;
   gap: 30px;
@@ -259,6 +261,19 @@ header {
   line-height: 1.6;
   color: #333;
 }
+
+
+/* joint section  */
+.joint-bg {
+    width: 100vw;
+    height: auto;
+}
+.joint-section {
+    margin: 40px 0px;
+    margin-left: -10px;
+}
+
+
 
 
 
@@ -361,6 +376,7 @@ header {
     /* plants lover section  */
     .container {
     flex-direction: column;
+    text-align: center;
     padding: 15px;
   }
 
