@@ -6,67 +6,105 @@
   font-style: normal;
 }
 
-
-
-/* Reset */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+.noto-serif {
+  font-family: "Noto Serif", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
 }
 
-/* Body Styling */
-body {
-  font-family: Arial, sans-serif;
-  background-color: #f4f7fe; /* Matches the screenshot background */
+/* style.css */
+
+/* header styles */
+header {
+    display: flex;
+    padding: 0%;
+    align-items: center;
 }
 
-/* Navbar Container */
+/* navbar styles starts */
+
+.logo {
+    margin-right: 850px;
+}
 .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 60px;
-  background-color: #f4f7fe;
+    justify-content: space-between;
+    margin: 30px 150px 130px ;
+    align-items: center;
+
 }
 
-/* Logo Styling */
-.logo img {
-  height: 60px;
+.navbar-items {
+  display: flex;
+  align-items: center;
+  padding: 20px ;
+}
+
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+  padding-right: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-size: 16px;
+  font-weight: normal;
+}
+
+.nav-links a.active {
+  font-weight: bold;
+}
+
+.text-gray {
+    opacity: 70%;
+}
+.cart-section {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.cart-text {
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.cart-icon {
+  height: 20px;
   width: auto;
 }
 
-/* Menu Links */
-.menu {
-  display: flex;
-  align-items: center;
-  gap: 30px;
-}
+@media screen  and (max-width : 576px) {
+    .hide{
+        display: none;
+    }   
+    .logo {
+    margin-right: 120px;
+    }
+    .navbar {
+        margin: 0 10px;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .logo-png {
+        height: 70px;
+    }
+    .cart-text {
+     font-weight: normal;
+     font-size: 18px;
+    }
 
-/* Navigation Link Styles */
-.menu a {
-  text-decoration: none;
-  font-size: 16px;
-  color: #777;
-  transition: color 0.3s ease;
-}
+    .cart-icon {
+     height: 22px;
+     width: auto;
+    }
+    
 
-/* Active Link */
-.menu a.active {
-  font-weight: bold;
-  color: #000;
-}
-
-/* Hover Effect */
-.menu a:hover {
-  color: #000;
-}
-
-/* Cart Styling */
-.menu .cart {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  font-weight: bold;
-  color: #000;
 }

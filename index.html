@@ -7,24 +7,32 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="navbar">
+    <header class="header">
         <!-- Logo -->
-    <div class="logo">
-      <img src="assets/logo.png" alt="Faugei Logo" />
-    </div>
+    <nav class="navbar"></nav>
+        <div class="logo">
+            <img src="assets/logo.png" alt="Faugei Logo" class="logo-png" />
+        </div>
 
-    <!-- Menu Links -->
-    <nav class="menu">
-      <a href="#" class="active">Home</a>
-      <a href="#">Shop</a>
-      <a href="#">About us</a>
-      <a href="#" class="cart">
-        <i class="fas fa-shopping-cart"></i>
-        Cart ($56)
-      </a>
+        <!-- Menu Links -->
+        <div class="navbar-items">
+            <!-- <div class="navbar-links"> -->
+                <ul class="nav-links inter hide">
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#" >Shop</a></li>
+                    <li><a href="#" >About us</a></li>
+                </ul>
+            <!-- </div> -->
+
+            <div class="cart-section inter">
+                <img src="assets/shopping-cart.png" alt="Cart Icon" class="cart-icon">
+                <span class="cart-text">Cart($56)</span>
+            </div>
+        </div>
     </nav>
     </header>
     <main>
